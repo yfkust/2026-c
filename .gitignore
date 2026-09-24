@@ -1,0 +1,16 @@
+# 原始数据及临时数据副本
+data/
+code/**/data/
+
+# Python 环境与缓存
+.venv/
+__pycache__/
+*.pyc
+
+# 本地配置和密钥
+.env
+.env.*
+!.env.example
+
+# repos
+repos/mne-python-main
