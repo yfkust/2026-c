@@ -1,0 +1,30 @@
+{
+  "schema_version": "Q1-B0-validation-v1",
+  "simulation_only": true,
+  "command": "python code/q1_b0_validate.py --config code/q1_b0_scenarios.json --b0 code/outputs/q1_b0/epochs_b0.npz --output-dir code/outputs/q1_b0_validation",
+  "parameters": {
+    "repeats_per_scenario": 100,
+    "seed": 20260924,
+    "scenario_count": 18,
+    "noise": "0.5 shared + sqrt(0.75) independent per channel, then scaled per channel to requested RMS",
+    "peak_search_radius_s": 0.08,
+    "no_peak_window_s": [
+      0.25,
+      0.5
+    ],
+    "no_peak_threshold_sigma": 3.0,
+    "no_peak_threshold_floor_ru": 0.2,
+    "sensor_dither_rms_ru": 1e-06
+  },
+  "input_sha256": {
+    "code/q1_b0_scenarios.json": "192f17a71a9aa882094f02b5f82fe1093b84ef4b7cf4d8effe5dffedac65ec84",
+    "code/outputs/q1_b0/epochs_b0.npz": "075a44d8a5471096120a95d589cb39b783606237745b964fcf1867a1c035a3c9"
+  },
+  "script_sha256": "3e1f5d2456e092ff841e208c1f96beffd7e426df3bc2bb262f5414ae940ec55f",
+  "preprocess_script_sha256": "3bca674bd8a98e759facfd49c52bea9bd196d67e01bee2136bb8b1bf05d9df04",
+  "python": "3.11.16",
+  "numpy": "2.4.6",
+  "scipy": "1.17.1",
+  "matplotlib": "3.11.1",
+  "exclusion": "clipped trials: rejection only, no reconstruction metrics"
+}

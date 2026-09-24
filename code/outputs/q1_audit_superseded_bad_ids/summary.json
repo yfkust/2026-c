@@ -1,0 +1,62 @@
+{
+  "VisualCogA_Task-1": {
+    "samples": 223845,
+    "cue_count": 100,
+    "cue_left": 54,
+    "cue_right": 46,
+    "hard_quality_pass": 85,
+    "outer_test_quality_pass": [
+      16,
+      13,
+      17,
+      17,
+      19
+    ],
+    "cue_anomalies": []
+  },
+  "VisualCogA_Task-2": {
+    "samples": 230157,
+    "cue_count": 100,
+    "cue_left": 57,
+    "cue_right": 43,
+    "hard_quality_pass": 88,
+    "outer_test_quality_pass": [
+      19,
+      16,
+      16,
+      16,
+      19
+    ],
+    "cue_anomalies": []
+  },
+  "VisualCogB_Task-1": {
+    "samples": 223005,
+    "cue_count": 100,
+    "cue_left": 48,
+    "cue_right": 52,
+    "hard_quality_pass": 89,
+    "outer_test_quality_pass": [
+      17,
+      17,
+      16,
+      15,
+      18
+    ],
+    "cue_anomalies": []
+  },
+  "VisualCogB_Task-2": {
+    "samples": 228330,
+    "cue_count": 100,
+    "cue_left": 50,
+    "cue_right": 50,
+    "hard_quality_pass": 84,
+    "outer_test_quality_pass": [
+      14,
+      19,
+      15,
+      17,
+      18
+    ],
+    "cue_anomalies": []
+  }
+}

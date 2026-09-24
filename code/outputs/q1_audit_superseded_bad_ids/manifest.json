@@ -1,0 +1,27 @@
+{
+  "schema_version": "Q1-audit-v1",
+  "model_design": "Q1-design-v1",
+  "python": "3.11.16",
+  "numpy": "2.4.6",
+  "scipy": "1.17.1",
+  "command": "python code/q1_audit.py --data-dir data --output-dir code/outputs/q1_audit",
+  "config": {
+    "fs": 256,
+    "h": 32,
+    "support": [
+      -160,
+      416
+    ],
+    "flat_samples": 64,
+    "kappa": 6.0,
+    "block_trials": 20,
+    "purge_trials": 1
+  },
+  "source_sha256": {
+    "VisualCogA_Task-1.mat": "02a8167b243815c3d048763528641f002eeef3b3903a31ea130b1f4e0cfc6b33",
+    "VisualCogA_Task-2.mat": "c120ef16ed6bd1a2f1e86e0ab030c6306d08e555a71359cf455744a9904cb748",
+    "VisualCogB_Task-1.mat": "e6fb2684bddeed0f43e541a52928ce73c690a9b1f91e23a6404e0537f0ef0fc9",
+    "VisualCogB_Task-2.mat": "c58c998880682027119548029ba92240604b9ecf4138e6c4ea3efe4522212e9d"
+  },
+  "script_sha256": "3bd049c8c7acd79a011632210713527ec6799a982d4fcc79a1444c1a4a47e029"
+}

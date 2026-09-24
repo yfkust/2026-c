@@ -1,0 +1,54 @@
+{
+  "schema_version": "Q1-B0-v1",
+  "unit": "raw_record_units",
+  "method": "B0",
+  "selection": "hard-pass only; intersect trial_ids with fold train_quality_pass/test_quality_pass before ERP",
+  "config": {
+    "fs": 256,
+    "fir_taps": 65,
+    "cutoff_hz": 30,
+    "window": "hamming",
+    "support": [
+      -160,
+      416
+    ],
+    "baseline_relative": [
+      -51,
+      0
+    ],
+    "core_relative": [
+      -51,
+      256
+    ],
+    "causal": false
+  },
+  "command": "python code/q1_preprocess.py --data-dir data --audit-dir code/outputs/q1_audit --output-dir code/outputs/q1_b0",
+  "python": "3.11.16",
+  "numpy": "2.4.6",
+  "scipy": "1.17.1",
+  "audit_sha256": {
+    "events.csv": "b9b45e75584344f985d45b216f852597bd988dde1023ff98b84dbc49a9cb6d23",
+    "quality.csv": "43479de8f933c2967accf369c7ab76c7c058f67e41eb049ec0c04eee5fef4861",
+    "splits.json": "0fc334802e3e6a63d332703563c9747d000b3886f07f2c7ef1dc4946a8052528",
+    "manifest.json": "3a7e8827ab59707ef7c6ca50d40dd64c74283a8f6158b48c246efae084633dea"
+  },
+  "script_sha256": "3bca674bd8a98e759facfd49c52bea9bd196d67e01bee2136bb8b1bf05d9df04",
+  "summary": {
+    "VisualCogA_Task-1": {
+      "hard_pass_epochs": 85,
+      "outer_test_quality_pass_epochs": 82
+    },
+    "VisualCogA_Task-2": {
+      "hard_pass_epochs": 88,
+      "outer_test_quality_pass_epochs": 86
+    },
+    "VisualCogB_Task-1": {
+      "hard_pass_epochs": 89,
+      "outer_test_quality_pass_epochs": 83
+    },
+    "VisualCogB_Task-2": {
+      "hard_pass_epochs": 84,
+      "outer_test_quality_pass_epochs": 83
+    }
+  }
+}
